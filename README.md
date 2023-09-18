@@ -14,6 +14,6 @@ TODO: add app info
 TODO: add screenshots
 
 ## Table of contents
-- [Get gupport](/SUPPORT.md)
+- [Get support](/SUPPORT.md)
 - [Contribute](/CONTRIBUTING.md)
 - [See the Privacy Policy](/PRIVACY_POLICY.md)
