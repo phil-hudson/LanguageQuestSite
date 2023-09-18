@@ -15,5 +15,5 @@ TODO: add screenshots
 
 ## Table of contents
 - [Get gupport](/SUPPORT.md)
-- [Contribute](/CONTRIBUTE.md)
+- [Contribute](/CONTRIBUTING.md)
 - [See the Privacy Policy](/PRIVACY_POLICY.md)
