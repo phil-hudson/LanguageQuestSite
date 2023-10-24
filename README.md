@@ -17,3 +17,5 @@ TODO: add screenshots
 - [Get support](/SUPPORT.md)
 - [Contribute](/CONTRIBUTING.md)
 - [See the Privacy Policy](/PRIVACY_POLICY.md)
+
+We are now using Firebase for the Privacy Policy hosting, as having domain verification is a requirement for Google OAuth flow, which is also a requirement for Google Play Games Services.
