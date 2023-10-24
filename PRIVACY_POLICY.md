@@ -2,18 +2,21 @@
 
 Privacy Policy for Language Quest
 
-Effective Date: 14/07/2023
+Effective Date: 24/10/2023
 
 This Privacy Policy describes how Language Quest ("we," "us," or "our") collects, uses, and discloses personal information when you use our mobile application, Language Quest ("the App"). Please read this Privacy Policy carefully before using the App or submitting any personal information. By using the App, you acknowledge that you have read and understood this Privacy Policy.
 
 1. Information We Collect
 
 1.1 Personal Information
-We may collect personal information that you provide directly to us when you create an account, use certain features of the App, or contact us for support. This may include, but is not limited to:
 
-- Your name
-- Email address
-- User-generated content, such as messages or posts
+1.1.1 Android - Google Play Game Services
+
+We value your privacy and want to be transparent about how we handle your data. Our application, designed exclusively for Android users, utilizes Google Play Game Services solely for the purpose of storing game progress. We do not access, use, store, or share any other Google user data. Rest assured that the data we collect through Google Play Game Services is limited to game-related information and is used exclusively for enhancing your gaming experience. We take data privacy seriously and have implemented measures to ensure that your personal information remains secure and is used in line with this specific purpose.
+
+1.1.2 iOS - iCloud
+
+For our iOS users, our application offers a seamless gaming experience by utilizing iCloud Key-Value storage to securely store game save data. This data is restricted to game-related information and is stored in your iCloud account to enable you to access your game progress across different devices seamlessly. We do not access, use, store, or share any other user data from your iCloud account or any other sources. Data privacy is of utmost importance to us, and we have taken measures to ensure that your game save data is stored securely and exclusively for the purpose of enhancing your gaming experience.
 
 1.2 Usage and Log Data
 We may automatically collect certain information about how you access and use the App. This may include:
