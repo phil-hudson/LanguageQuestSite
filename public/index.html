@@ -1,87 +1,151 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.5.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.5.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Language Quest!</title>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 800px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
+  <style media="screen">
+    body {
+      background: #ECEFF1;
+      color: rgba(0, 0, 0, 0.87);
+      font-family: Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #message {
+      background: white;
+      max-width: 800px;
+      margin: 100px auto 16px;
+      padding: 32px 24px;
+      border-radius: 3px;
+    }
+
+    #message h2 {
+      color: #ffa100;
+      font-weight: bold;
+      font-size: 16px;
+      margin: 0 0 8px;
+    }
+
+    #message h1 {
+      font-size: 48px;
+      font-weight: 300;
+      color: rgba(0, 0, 0, 0.6);
+      margin: 0 0 16px;
+      text-align: center;
+    }
+
+    #message p {
+      line-height: 140%;
+      margin: 16px 0 24px;
+      font-size: 14px;
+    }
+
+    #message a {
+      display: block;
+      text-align: center;
+      background: #039be5;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+      padding: 16px;
+      border-radius: 4px;
+    }
+
+    #message,
+    #message a {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+
+    #load {
+      color: rgba(0, 0, 0, 0.4);
+      text-align: center;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+
+      body,
+      #message {
+        margin-top: 0;
+        background: white;
+        box-shadow: none;
       }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h1>Language Quest</h1>
-      <a href="/privacy-policy.html">Privacy Policy</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      body {
+        border-top: 16px solid #ffa100;
+      }
+    }
+  </style>
+</head>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+<body>
+  <div id="message">
+    <h1>Language Quest!</h1>
+
+    <p style="text-align: center;">
+      <img src="https://github.com/phil-hudson/LanguageQuestSite/assets/1914950/cbff3c5c-e5af-48d4-9ed4-bd3a99021d0f"
+        width="200">
+    </p>
+
+    <p>Welcome to Language Quest!, the captivating multilingual language learning game that turns vocabulary building
+      into a fun-filled quest! Embark on an exciting journey in our language learning game that is suitable for both
+      kids and adults.</p>
+
+    <p>Language Quest! combines the thrill of gaming with the power of education, providing an engaging and interactive
+      language learning experience. From kids to adults, this app is designed to cater to your individual needs and help
+      you reach your language goals where the key to success lies in mastering words and building a robust lexicon in
+      multiple languages.</p>
+
+    <p>FUN FOR KIDS AND ADULTS ALIKE </p>
+    <p>Language Quest! is an exciting vocabulary-building game that caters to learners of all ages. With colorful
+      visuals, entertaining gameplay, and audio pronunciations, learners of all ages can enhance their vocabulary skills
+      in a fun and interactive way.</p>
+
+    <p>EXPAND YOUR VOCABULARY</p>
+    <p>Language Quest! is your gateway to a practical multilingual vocabulary. With thousands of everyday words across
+      various languages, you'll have the opportunity to learn and retain essential terms that will enhance your
+      communication abilities. Immerse yourself in a world of words and discover the beauty of language.</p>
+
+    <p>PLAYFUL AND INTERACTIVE LEARNING</p>
+    <p>Learning vocabulary has never been more fun! Language Quest! offers a collection of interactive challenges and
+      dynamic word games suitable for both kids and adults. With word associations, memory games and audio
+      pronunciations, the game is designed to reinforce your understanding and retention of words in a captivating way.
+      Dive into the exciting journey that make language learning feel like an entertaining game.</p>
+
+
+    <p>LEARN AS YOU PLAY</p>
+    <p>Stay motivated and engaged as you conquer new words and advance your vocabulary. Learn new words, train your
+      memory, earn more stars in each level, celebrate your achievements, and watch your vocabulary grow day by day.</p>
+
+    <p>PRACTICAL WORD LIBRARY</p>
+
+    <p>Language Quest offers a diverse range of word lists carefully curated for practical everyday conversations.
+      Categorized by themes, our library equips you with the necessary vocabulary to effectively communicate in daily
+      contexts. Explore a wide range of words, listen to their pronunciations, and reinforce your memory by mastering
+      each level of the game.</p>
+
+    <p>FEATURES:</p>
+    <ul>
+      <li>Engaging word games for vocabulary acquisition</li>
+      <li>Interactive challenges and dynamic word games</li>
+      <li>Multilingual library of categorized word lists</li>
+      <li>Hints and audio pronunciations available in multiple languages</li>
+
+    </ul>
+    <p>Embark on your Language Quest today and boost your language skills. Download the app now and unlock a world of
+      words at your fingertips!</p>
+
+    <p>Note: Internet connectivity required for some features.</p>
+
+
+    <a href="/privacy-policy.html">Privacy Policy</a>
+    <br>
+    <a href="mailto:languagequestapp@gmail.com">Support Email</a>
+  </div>
+</body>
+
 </html>
