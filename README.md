@@ -11,9 +11,9 @@ Welcome to Language Quest!, the captivating multilingual language learning game 
 Embark on an exciting journey in our language learning game that is suitable for both kids and adults.
 
 <p align="center">
-    <img src="https://github.com/phil-hudson/LanguageQuestSite/assets/1914950/87f2cbbd-5037-4b55-9b8b-4aab27bdb34c" width="500">
-    <img src="https://github.com/phil-hudson/LanguageQuestSite/assets/1914950/429c6400-ae6d-4f10-b312-857c245f5f9a" width="500">
-    <img src="https://github.com/phil-hudson/LanguageQuestSite/assets/1914950/3284b682-2b6a-4c01-a98b-c490e95af39c)" width="500">
+    <img src="https://github.com/phil-hudson/LanguageQuestSite/assets/1914950/f73f5468-2870-4b02-a775-1bc9976c65a5" width="500">
+    <img src="https://github.com/phil-hudson/LanguageQuestSite/assets/1914950/4a7c5292-431a-450a-8f7b-2cfdff15f953" width="500">
+    <img src="https://github.com/phil-hudson/LanguageQuestSite/assets/1914950/2d87fd8e-944b-40a1-895d-cc6e86f641b1" width="500">
 </p>
 
 ## Table of contents
